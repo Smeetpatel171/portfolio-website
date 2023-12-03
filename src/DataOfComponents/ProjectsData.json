@@ -1,0 +1,52 @@
+[
+    {
+      "id":1,
+      "mainimage":"Assets/project1.png",
+      "title": "Coinfolio",
+      "smalldesc" : "Your Crypto Portfolio Tracker.",
+      "longdesc":"The Web App is designed with a purpose – to help you manage your cryptocurrency investments and stay informed about the ever-changing world of digital currencies!",
+      "technologies": "React.js, Bootstrap, HTML, CSS, JavaScript, Firebase, and Chart.js",
+      "githubrepolink": "https://github.com/Smeetpatel171/COINFOLIO-cryptoTracker",
+      "wesbitelink": "https://coinfolio-management.netlify.app/",
+      "features": [
+        {"name": "Stay up-to-date with real-time cryptocurrency data.","featureid":1 },
+        {"name": "Make Important investment decisions with interactive charts." ,"featureid":2},
+        {"name": "You can Add your Favourite coins in your portfolio watchlist tab so that you can moniter the realtime changes in Those Coins." ,"featureid":3},
+        {"name": "Effortlessly manage your crypto portfolio.","featureid":4},
+        {"name": "INR and USD currency Support.","featureid":5}
+      ]
+
+    },  
+    {
+      "id":2,
+      "mainimage":"Assets/project2.png",
+      "title": "Vahan Eye",
+      "smalldesc" : "Enhancing City Safety Through License Plate Recognition.",
+      "longdesc":"Vahan-Eye is a cutting-edge license plate recognition and vehicle tracking solution designed to enhance the safety and security of our city's streets.",
+      "technologies": "React.js, Bootstrap, HTML, CSS, JavaScript",
+      "githubrepolink": "https://github.com/Smeetpatel171/VahanEye",
+      "wesbitelink": "https://vahaneye.netlify.app/",
+      "features": [
+        {"name": "Register Complaints of Your Vehicle Related issues","featureid":1 },
+        {"name": "Realtime Camera passing Vehicle Data for Govt. Officials" ,"featureid":2},
+        {"name": "Realtime vehicle searching ability for Govt. Officials" ,"featureid":3}
+      ]
+    }, 
+    {
+      "id":3,
+      "mainimage":"Assets/project3.png",
+      "title": "Portfolio Website",
+      "smalldesc" : "Welcome to my portfolio website! I'm thrilled To showcase My Skills.",
+      "longdesc":"A Portfolio Website in which I have Included My skillSet, Education, Experience, Project Details,Contact Information.",
+      "technologies": "React.js, Bootstrap, HTML, CSS, JavaScript",
+      "githubrepolink": "https://github.com/Smeetpatel171/portfolio-website",
+      "wesbitelink": "https://smeetpatel.netlify.app/",
+      "features": [
+        {"name": "Detailed bio:I have Shared information about My background, skills, and experiences.","featureid":1 },
+        {"name": "Downloadable resume: Provided a PDF version of My resume for easy download." ,"featureid":2},
+        {"name": "Contact form: Allowed visitors to send Me messages directly from the website." ,"featureid":3},
+        {"name": "Intuitive menu: Makes easier for users to navigate through the site.","featureid":4}
+      ]
+    }
+      
+  ]
