@@ -71,7 +71,7 @@ export default function Header() {
                         Home
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <Link
                         className={`${
                           location.pathname === "/about" ? "active" : ""
@@ -81,7 +81,7 @@ export default function Header() {
                       >
                         About
                       </Link>
-                    </li>
+                    </li> */}
                     <li className="nav-item">
                       <Link
                         className={`${
@@ -93,7 +93,7 @@ export default function Header() {
                       </Link>
                     </li>
                    
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <Link
                         className={`${
                           location.pathname === "/services" ? "active" : ""
@@ -103,8 +103,8 @@ export default function Header() {
                       >
                         Services
                       </Link>
-                    </li>
-                    <li className="nav-item">
+                    </li> */}
+                    {/* <li className="nav-item">
                       <Link
                         className={`${
                           location.pathname === "/testimonials" ? "active" : ""
@@ -114,7 +114,7 @@ export default function Header() {
                       >
                         Testimonials
                       </Link>
-                    </li>
+                    </li> */}
                     <li className="nav-item">
                       <Link
                         className={`${

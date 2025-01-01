@@ -100,19 +100,20 @@ h1,h2,h3{
     background-color:rgba(0, 0, 0, 0.589);
 }
 /* ==============================Home page============================ */
-.toptint{
+/* .toptint{
     height: 90%;
     width: 100%;
     background-color:  #683d4a17;
    position: absolute;
    top: 0;
    z-index: -1;
-}
+} */
 .hero{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 1.5rem;
     margin-top: 11%;
 }
 .heroinfo{
@@ -159,7 +160,11 @@ color: #773d4e !important;
   }
   /* ====================AboutHomeComponent=============================== */
   .AboutHomeComponent{
-    margin-top: 200px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .quoteimg{
     width: 100%;
@@ -463,12 +468,20 @@ font-weight: 400;
  color: #aa979d;
 }
 .footer-first ul{
-padding-left: 0px;
+padding-left: 40px !important;
+margin-left: 7px !important;
+margin-block-end: 0px !important;
+margin-block-start: 0px !important;
+padding-inline-start: 0px !important;
+padding-inline-end: 0px !important;
+padding-right: 0px !important;
+list-style-type: none;
 display: flex;
 }
 .footer-first ul li{
 list-style-type: none;
-margin-right: 15px;
+margin-left: 7px;
+margin-right: 7px;
 }
 .footer-first ul li a{
     display: block;
@@ -489,6 +502,17 @@ height: 100%;
 }
 .footer-first ul li a:hover{
     background-color: rgba(240, 248, 255, 0.342);
+}
+.about-btn button{
+  color: #ca9eab !important;
+  background-color: rgba(128, 128, 128, 0.404);
+   font-weight: 600;
+   width: 180px;
+   height: 40px;
+   border-radius: 30px;
+   border: 1px solid rgba(255, 255, 255, 0.404);
+   margin: 15px 0px;
+   
 }
 .footer-second ul{
     padding-left: 0px;
@@ -590,7 +614,12 @@ height: 100%;
   .formicondesc p {
     margin-bottom: 0px;
   }
-  
+  .projectBriefinfo{
+    padding-bottom: 5rem;
+  }
+  .contactBoxMain{
+    padding-bottom: 5rem;
+  }
   .contactbox {
     box-shadow: 0px 2px 15px rgba(226, 223, 223, 0.1);
   

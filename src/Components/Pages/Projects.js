@@ -3,7 +3,7 @@ import projectdata from "../../DataOfComponents/ProjectsData.json";
 import point from "../../Assets/Images/point.svg"
 export default function Projects() {
   return (
-    <div className="container">
+    <div className="container projectBriefinfo">
       <div className="heading">
         <h2>Featured Projects</h2>
         <p>
@@ -16,7 +16,7 @@ export default function Projects() {
       </div>
 {projectdata.map((item)=>{
   return(
-    <div className="projectBriefinfo" key={item.id}>
+    <div className="" key={item.id}>
         <div className="heading">
           <h3>{item.title}</h3>
           <p>

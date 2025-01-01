@@ -47,8 +47,8 @@ export default function ProjectSlider() {
       <div className="heading">
         <h2>Featured Projects</h2>
         <p>
-          "Discover a collection of my diverse and innovative projects that
-          showcase my passion for web development, user-centric design, and
+          Discover a collection of my diverse and innovative projects that
+          showcase my passion for Full stack development, user-centric design, and
           cutting-edge technologies. Explore the intersection of creativity and
           functionality, and witness the impact of seamless user experiences
           across a range of digital solutions.

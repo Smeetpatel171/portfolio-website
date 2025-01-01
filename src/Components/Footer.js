@@ -7,7 +7,7 @@ import  github  from '../Assets/Images/github.svg';
 import ResumePDF from "../Assets/Files/sp.pdf"
 export default function Footer() {
   const location = useLocation();
-  const handleDownloadResume = () => {
+   const handleDownloadResume = () => {
 
     // Create a temporary link element
     const link = document.createElement('a');

@@ -23,14 +23,14 @@ function App() {
         <Route path="/" element={<Navbar/>}>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="about" element={<AboutMe/>} />
+          {/* <Route path="about" element={<AboutMe/>} /> */}
           <Route path="*" element={<PageNotFound />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="services" element={<Services />} />
-          <Route path="testimonials" element={<Testimonials />} />
+          {/* <Route path="services" element={<Services />} /> */}
+          {/* <Route path="testimonials" element={<Testimonials />} /> */}
         </Route>
       </Routes>
-    <Footer></Footer>
+    {/* <Footer></Footer> */}
     <BottomToTop></BottomToTop>
     </BrowserRouter>
     

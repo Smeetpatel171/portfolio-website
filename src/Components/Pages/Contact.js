@@ -105,7 +105,7 @@ useEffect(() => {
   };
 
   return (
-    <section className="container">
+    <section className="container contactBoxMain">
       <div className="heading">
         <h2>Contact</h2>
         <p>
@@ -143,7 +143,7 @@ useEffect(() => {
 
                     <div className="formicondesc">
                       <span>E-mail:</span>
-                      <p>smeetpatel171@outlook.com</p>
+                      <p>smeet.softwaredev@gmail.com</p>
                     </div>
                   </div>
                 </div>
