@@ -78,7 +78,8 @@ useEffect(() => {
     let isvalid = validation();
     if (isvalid) {
       setwaitingmessage(true);
-      await fetch("https://portfoliobackend-9vzm.onrender.com/register", {
+      console.log("API CALLING ")
+      await fetch("https://website-backend-dbfu.onrender.com/api/mail/create", {
         method: "POST",
         headers: {
           "content-Type": "application/json",
@@ -94,6 +95,7 @@ useEffect(() => {
         .then((data) => {
           // Handle the API response data here
           console.log(data);
+          console.log("API done")
         })
         .catch((error) => {
           console.error("Error:", error);
@@ -180,7 +182,7 @@ useEffect(() => {
             </div>
           </div>
           <div className="col-lg-8 ">
-            <form action="" className="contactform" onSubmit={handlesubmit}>
+            <form action="" className="contactform">
               <div className="row">
                 <div className="col-lg-6">
                   <input
@@ -226,11 +228,10 @@ useEffect(() => {
                   <span className="formhandle">{formerror.message}</span>
                 </div>
                 <div className="col-lg-12">
-                  <input
-                    type="submit"
+                  <button
+                    onClick={handlesubmit}
                     className="formbtn"
-                    value="Send Message"
-                  />
+                  >Submit</button>
                   <div className="message-sent">{isMessageSent===false && waitingmessage===true ?"Please Wait,Sending Message...":""}</div>
                   <div className= {isMessageSent?"message-sent":"message-notsent"}>I have received your submission and will get back to you shortly.</div>
                 </div>
