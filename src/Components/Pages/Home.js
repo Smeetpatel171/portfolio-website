@@ -8,7 +8,7 @@ import  instagram  from '../../Assets/Images/instagram.svg';
 import  linkdin  from '../../Assets/Images/linkdin.svg';
 import  github  from '../../Assets/Images/github.svg';
 import  leetcode  from '../../Assets/Images/leetcode.svg';
-import ResumePDF from "../../Assets/Files/sp.pdf"
+import ResumePDF from "../../Assets/Files/smeet.pdf"
 const handleDownloadResume = () => {
 
     // Create a temporary link element
