@@ -4,7 +4,7 @@ import  facebook  from '../Assets/Images/facebook.svg';
 import  instagram  from '../Assets/Images/instagram.svg';
 import  linkdin  from '../Assets/Images/linkdin.svg';
 import  github  from '../Assets/Images/github.svg';
-import ResumePDF from "../Assets/Files/sp.pdf"
+import ResumePDF from "../Assets/Files/smeet.pdf"
 export default function Footer() {
   const location = useLocation();
    const handleDownloadResume = () => {
