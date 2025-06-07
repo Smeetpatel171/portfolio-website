@@ -7,7 +7,7 @@ import Projects from "./Components/Pages/Projects";
 import Footer from "./Components/Footer";
 import BottomToTop from "./Components/BottomToTop";
 import PageNotFound from "./Components/PageNotFound";
-
+import UploadZip from "./Components/Pages/UploadZip";
 import Services from "./Components/Pages/Services";
 import Testimonials from "./Components/Pages/Testimonials";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -26,6 +26,8 @@ function App() {
           {/* <Route path="about" element={<AboutMe/>} /> */}
           <Route path="*" element={<PageNotFound />} />
           <Route path="projects" element={<Projects />} />
+          
+<Route path="upload-zip" element={<UploadZip />} />
           {/* <Route path="services" element={<Services />} /> */}
           {/* <Route path="testimonials" element={<Testimonials />} /> */}
         </Route>
