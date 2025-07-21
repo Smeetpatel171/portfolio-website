@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { supabase } from "./utils/supabaseClient";
 
 function UploadZip() {
   const [file, setFile] = useState(null);
@@ -17,24 +18,21 @@ function UploadZip() {
   const handleUpload = async () => {
     if (!file) return alert("Please select a .zip file");
 
-    const formData = new FormData();
-    formData.append("file", file);
+    const filename = `${Date.now()}-${file.name}`;
 
-    try {
-      const res = await fetch("https://website-backend-dbfu.onrender.com/api/upload", {
-        method: "POST",
-        body: formData,
+    const { data, error } = await supabase.storage
+      .from("zips")
+      .upload(filename, file, {
+        contentType: "application/zip",
+        upsert: false,
       });
 
-      const data = await res.json();
-      if (data.success) {
-        setMsg(`Uploaded successfully: ${data.filename}`);
-      } else {
-        setMsg("Upload failed");
-      }
-    } catch (err) {
-      console.error(err);
-      setMsg("Error during upload");
+    if (error) {
+      console.error("Upload error:", error.message);
+      setMsg("Upload failed: " + error.message);
+    } else {
+      const publicUrl = `https://nexrfifcymcgnuwslimw.supabase.co/storage/v1/object/public/zips/${filename}`;
+      setMsg("Uploaded successfully! URL: " + publicUrl);
     }
   };
 
@@ -44,7 +42,7 @@ function UploadZip() {
       <input type="file" accept=".zip" onChange={handleFileChange} />
       <button onClick={handleUpload}>Upload</button>
       {msg && <p>{msg}</p>}
-    </div>  
+    </div>
   );
 }
 
